@@ -2,22 +2,21 @@
 using namespace std;
 
 int cheetah(int x){
-    int all,bottle = x/10,ex,firstex;
+    int all,bottle = x/10,ex,frac;
 
-    ex= bottle/3;
+    ex = bottle/3;
+    frac = bottle%3;
     all = ex;
     
     if(ex%3 >= 0){
-        while(ex/3 > 0){
+        while(ex > 2){
             all = all + (ex/3);
-            ex = (ex%3) + (ex/3);
+            ex = (ex%3) + (ex/3) + frac;
+            cout << all << " " << ex << endl;
+            frac =0;
         }
-        return bottle+all;
-    }else{
-        return bottle;
     }
-
-
+    return bottle+all;
 }
 
 int main(){
