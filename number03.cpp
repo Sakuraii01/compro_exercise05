@@ -8,7 +8,7 @@ int cheetah(int x){
     frac = bottle%3;
     all = ex;
 
-    cout << frac << " "<< ex%3 << " " << ex/3 << endl;
+   /* cout << frac << " "<< ex%3 << " " << ex/3 << endl;*/
 
     if(ex%3 >= 0){
         while(ex > 2){
@@ -17,7 +17,7 @@ int cheetah(int x){
             frac =0;
         }
     }
-    cout << bottle << " "<< all << " " << ex << endl;
+   /*cout << bottle << " "<< all << " " << ex << endl;*/
     return bottle+all;
 }
 
